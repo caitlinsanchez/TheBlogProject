@@ -31,7 +31,9 @@ namespace TheBlogProject.Models
 
         [StringLength(500, ErrorMessage = "{0} must be at least {2} characters long and at most {1} characters.", MinimumLength = 2)]
         [Display(Name = "Moderated Comment")]
-        public int ModeratedBody { get; set; }
+        public string ModeratedBody { get; set; }
+
+        public ModerationType ModerationType { get; set; }
 
         //Navigation properties
 
